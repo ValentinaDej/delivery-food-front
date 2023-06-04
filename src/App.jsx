@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { useDispatch } from 'react-redux';
 
@@ -27,7 +27,8 @@ export const App = () => {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<ShopPage />} />
+          <Route path="" element={<Navigate to="/shop" replace />} />
+          <Route path="/shop" element={<ShopPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="*" element={<ShopPage />} />
         </Route>

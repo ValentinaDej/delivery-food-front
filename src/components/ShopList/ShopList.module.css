@@ -1,0 +1,60 @@
+.shopContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.shopList {
+  min-width: 280px;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productList li {
+  flex-basis: calc(100%);
+}
+
+.modalNavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+}
+
+.modalNavigationBtn {
+  background-color: transparent;
+  border: none;
+  color: #2196f3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .shopList {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 481px) {
+  .productContainer {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .productList li {
+    flex-basis: calc(50% - 40px); /* 2 колонки */
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .productList li {
+    flex-basis: calc(33.33% - 40px); /* 3 колонки */
+  }
+}

@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link:hover {
+  color: #007bff;
+}
+
+.link:global(.active) {
+  color: #007bff;
+  font-weight: bold;
+}

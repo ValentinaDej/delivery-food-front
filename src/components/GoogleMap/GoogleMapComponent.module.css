@@ -25,3 +25,13 @@
   color: #313131;
   font-weight: 900;
 }
+
+@media (min-width: 1280px) {
+  .routeButton {
+    left: calc(50% - 610px);
+  }
+
+  .duration {
+    left: calc(50% - 610px);
+  }
+}

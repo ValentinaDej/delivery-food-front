@@ -12,8 +12,9 @@
    any source that provides good randomness.
 
    `REACT_APP_MAP` - is the key used for accessing Google Maps service, by
-   integrating [https://console.cloud.google.com/apis/library](Maps JavaScript
-   API) into your project.
+   integrating (https://console.cloud.google.com/apis/library/)[Maps JavaScript
+   API] into your project. You should also enable the following APIs -
+   Directions API, Geocoding API, and Places API.
 
 6. Launch the development mode by running the `npm start` command.
 7. Go to [http://localhost:3000](http://localhost:3000) in your browser. You can
